@@ -1,0 +1,31 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<div class="container">
+	<div class="col col-sm-3-5 col-md-2-3">
+		<div class="detalles-movies">
+			<img class="imgmovie" src="/media/{{pelicula.imagen}}" alt="">
+			<h1>{{pelicula.titulo}}</h1>
+			<div class="detalles">
+				<dl>
+					<dt>Director:</dt>
+					<dd>{{pelicula.director}}</dd>
+					<dt>Escritor:</dt>
+					<dd>{{pelicula.escritor}}</dd>
+					<dt>Genéro:</dt>
+					<dd>pelicula.genero</dd>
+					<dt>Año:</dt>
+					<dd>{{pelicula.year</dd>
+					<dt>Clasificación:</dt>
+					<dd>{{pelicula.clasificacion}}</dd>
+				</dl>
+				<div class="detalles-bnts">
+					<a class="button button-primary" id="btn-trailer" href="#">Ver Trailer</a>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+	
+
+{%endblock content%}
